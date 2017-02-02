@@ -54,7 +54,7 @@ public class Driver {
         for(int i = 0; i<hashes.length; i++){
             if(pwd.contains(hashes[i])){                                    //if hash is found in the file,
                 long endTime = System.currentTimeMillis();                  //stop timer...found
-                System.out.println("The password for hash value "+hashes[i]+" is "+hashes[i-1]+
+                System.out.println("The password for hash value "+hashes[i].toLowerCase()+" is "+hashes[i-1]+
                         ", it takes the program "+(((double)endTime-startTime)/1000)+" sec to recover this password");
             }
         }
